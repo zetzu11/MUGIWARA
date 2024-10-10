@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HII SHELDON</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #0056d8;
+        color: white;
+        text-align: center;
+        margin: 0;
+        padding: 20px;
+        position: relative;
+      }
+      
+      button {
+        margin: 10px;
+        padding: 10px 20px;
+        background-color: #ffffff;
+        color: #d800d8;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        position: relative;
+      }
+      button:hover {
+        background-color: #e0e0e0;
+      }
+    </style>
+    <script>
+      let noClickCount = 0;
+
+      function A() {
+        document.body.innerHTML = `
+          <h1>LUYAGG KA KAY SYDNEYY??</h1>
+          <h1></h1>
+          <button onclick="YES()">OO</button>
+          <button id="noBtn" onclick="NO()">WALA</button>
+        `;
+      }
+      function B() {
+        document.body.innerHTML = `
+          <h1>LUYAGG GID EII DENY KAPA</h1>
+          <h1>HAHAHHAHAHAHAHAHAH</h1>
+          <button onclick="C()">--></button>
+         
+          
+        `;
+      }
+      
+      function C() {
+        document.body.innerHTML = `
+          <h1>MAY KARAPATAN KA SHEL??</h1>
+          <button onclick="D()">WALA</button>
+          <button onclick="D()">WALA</button>
+        `;
+      }
+      
+      function D() {
+        document.body.innerHTML = `
+          <h1>TI NGA A GA SELOS KA??</h1>
+          <h2><b>KAY WALA KAMAN KARAPATAN!!!</b></h2>
+          <h2> HHAHAHAHHAHAHAHAHAHAHAHHAHA</h2>
+          <button onclick="E()">--></butto>
+
+        `;
+      }
+      
+       function E() {
+        document.body.innerHTML = `
+          <h1>BIGO SHELDON</h1>
+          <h1>NAGING BITTER COLD NA PERSON HAHAH</h1>
+          <h2>HAHAHHAHHAHAHAHHAHAAHAHAHHHAHAHAHHAHAH</h2>
+          <p>LOVE CHANGE PEOPLE HAHAH</p>
+          <button onclick="F()">--></button>
+          
+        `;
+      }
+
+      function F() {
+        document.body.innerHTML = `
+          <h1>K LANG NA SHEL AHH</h1>
+          <h1>THERE ARE PLENTY FISH IN THE SEA</h1>
+          <h1>KITA KAGID NA SANG PARA SMO</p>
+          <button onclick="G()">--></button>
+         
+          
+        `;
+      }
+
+      function G() {
+  document.body.innerHTML = `
+    <h1>CLICK SHEL</h1>
+    <h1>RELAPSE TA</h1>
+    <button onclick="redirect()">RELAPSE??</button>
+    <br>
+    <a href="https://youtu.be/zUM8aTWD9ko?si=zLyoNOgBalBH0-hq" target="_blank">RELAPSE??</a>
+  `;
+}
+
+function redirect() {
+  window.location.href = "https://youtu.be/zUM8aTWD9ko?si=zLyoNOgBalBH0-hq";
+}
+
+     
+
+      function YES() {
+        document.body.innerHTML = `
+          <h1>LUYAGG GID EI </h1>
+          <h2>HAHHAHAHHAHAHAHAHAH</h2>
+          <p>LAIN MAN TO GALING NALUYAGAN YA SHEL</p>
+          <P>HAHHHAHAHAHAH</p>
+         <button onclick="C()">--></button>
+          
+          <pre>
+           
+          </pre>
+          <p>
+            </p> 
+          
+        `;
+      }
+
+      function NO() {
+        noClickCount++;
+        const noBtn = document.getElementById("noBtn");
+
+        if (noClickCount === 1) {
+          moveButtonRandomly(noBtn);
+          
+        } else if (noClickCount === 2) {
+          moveButtonRandomly(noBtn);
+          
+        }  else if (noClickCount === 3) {
+          moveButtonRandomly(noBtn);
+          
+        } else if (noClickCount === 4) {
+          moveButtonRandomly(noBtn);
+          
+        }else if (noClickCount === 5) {
+          moveButtonRandomly(noBtn);
+          
+        }else if (noClickCount === 6) {
+          moveButtonRandomly(noBtn);
+          
+        }else if (noClickCount >= 7 ) {
+          document.body.innerHTML = `
+            <h1>LUYAGG KA KAY SYDNEYY??</h1>
+          <h1></h1>
+          <button onclick="B()">OO NA AHH </button>
+          
+            <pre>
+              
+            </pre>
+          `;
+        }
+      }
+           
+      
+      function moveButtonRandomly(button) {
+        // Move the button to a random position within the page.
+        const x = Math.floor(Math.random() * (window.innerWidth - button.offsetWidth)) + 'px';
+        const y = Math.floor(Math.random() * (window.innerHeight - button.offsetHeight)) + 'px';
+        button.style.position = 'absolute';
+        button.style.left = x;
+        button.style.top = y;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>YOII SHELDONN</h1>
+    <h2>HAHAHHAHAHAHAHAHAHHAHA</h2>
+
+    
+
+    <!-- Next Button -->
+    <button onclick="A()">Next</button>
+  </body>
+</html>
